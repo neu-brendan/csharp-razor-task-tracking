@@ -2,9 +2,9 @@ namespace Tasker
 {
     public class Task
     {
-        int Id { get; set; }
-        string Title { get; set; }
-        string Description { get; set; }
-        int Priority { get; set; }
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public int Priority { get; set; }
     }
 }
