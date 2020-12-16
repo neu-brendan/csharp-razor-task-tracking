@@ -1,6 +1,7 @@
 ﻿@page "/create-task"
-@model CreateTaskModel
+@model Tasker.Pages.CreateTaskModel
 @{
+    ViewData["Title"] = "CreateTask";
 }
 
 <h1>New Task</h1>
@@ -15,5 +16,5 @@
     <label asp-for="NewTask.Priority">Priority</label>
     <input type="text" asp-for="NewTask.Priority">
 
-    <input type="submit">
+    <input type="submit" />
 </form>

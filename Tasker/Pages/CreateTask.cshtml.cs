@@ -16,7 +16,7 @@ namespace Tasker.Pages
 
         public CreateTaskModel(ApplicationDbContext context)
         {
-            this._context = context;
+            _context = context;
         }
 
         public void OnGet()
@@ -25,9 +25,9 @@ namespace Tasker.Pages
 
         public IActionResult OnPost()
         {
-            this._context.Tasks.Add(NewTask);
-            
-            this._context.SaveChanges();
+            _context.Tasks.Add(NewTask);
+
+            _context.SaveChanges();
 
             return RedirectToPage("Index");
         }
