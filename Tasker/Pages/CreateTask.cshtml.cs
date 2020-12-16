@@ -12,5 +12,10 @@ namespace Tasker.Pages
         public void OnGet()
         {
         }
+
+        public IAsyncResult OnPost()
+        {
+            return RedirectToPage("Index");
+        }
     }
 }
